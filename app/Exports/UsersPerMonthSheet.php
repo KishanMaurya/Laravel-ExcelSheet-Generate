@@ -11,7 +11,7 @@ class UsersPerMonthSheet implements FromQuery, WithTitle
      */
     public function query()
     {
-        return User::query()->where('id' , '>' , 25);
+        return User::where('id','>',25);
     }
 
     /**
